@@ -36,7 +36,7 @@ resource "aws_lb_target_group" "alb_target_group" {
     matcher             = "200,301,302"
     path                = "/"
     port                = "traffic-port"
-    protocol            = "http"
+    protocol            = "HTTP"
     timeout             = 5
     unhealthy_threshold = 2
   }
@@ -47,7 +47,7 @@ resource "aws_lb_target_group" "alb_target_group" {
 resource "aws_lb_listener" "alb_http_listener" {
   load_balancer_arn = aws_lb.application_load_balancer.arn
   port              = 80
-  protocol          = "http"
+  protocol          = "HTTP"
 
   default_action {
     type = "redirect"
@@ -67,7 +67,7 @@ resource "aws_lb_listener" "alb_http_listener" {
 resource "aws_lb_listener" "alb_https_listener" {
   load_balancer_arn  = aws_lb.application_load_balancer.arn
   port               = 443
-  protocol           = "https"
+  protocol           = "HTTPS"
   ssl_policy         = "ELBSecurityPolicy-2016-08"
   certificate_arn    = var.ssl_certificate_arn
 
