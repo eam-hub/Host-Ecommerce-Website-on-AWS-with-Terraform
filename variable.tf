@@ -50,7 +50,7 @@ variable "ssh_location" {
 
 # rds variables
 variable "database_snapshot_identifier" {
-  default = "arn:aws:rds:us-east-1:499930062720:snapshot:database-1-snapshot"
+  default = "arn:aws:rds:us-east-1:499930062720:snapshot:shopwise"
   description = "the database snapshort arn"
   type = string
 }
@@ -62,13 +62,13 @@ variable "database_instance_class" {
 }
 
 variable "database_instance_identifier" {
-  default = "database-1"
+  default = "database-rdsdb"
   description = "the database instance identifier"
   type = string
 }
 
 variable "multi_az_deployment" {
-  default = "false"
+  default = false
   description = "create a standby db instance"
   type = bool
 }
