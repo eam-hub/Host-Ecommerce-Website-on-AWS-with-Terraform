@@ -75,7 +75,7 @@ variable "multi_az_deployment" {
 
 #alb variables
 variable "ssl_certificate_arn" {
-  default = "arn:aws:acm:us-east-1:499930062720:certificate/a4e0ebed-900d-4a65-91d9-2add8dee8d34"
+  default = "arn:aws:acm:us-east-1:499930062720:certificate/e597bbe0-9871-4b33-8f4e-9c4a4fa575f5"
   description = "ssl certificate arn"
   type = string
 }
@@ -109,5 +109,18 @@ variable "ec2_instance_type" {
 variable "ec2_key_pair_name" {
   default = "ec2key"
   description = "name of ec2 key pair"
+  type = string
+}
+
+#Route 53 variables
+ variable "domain_name" {
+  default = "eamfresh.com"
+  description = "domain name"
+  type = string
+}
+
+ variable "record_name" {
+  default = "www"
+  description = "sub domain name"
   type = string
 }
