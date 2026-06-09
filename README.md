@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project serves as an introduction to Infrastructure as Code (IaC) using Terraform. The goal is to deploy an eCommerce website on AWS and configure various AWS resources using code. This project helped me learn about configuring and managing AWS resources with Terraform and introduced me to DevOps tools like Git, GitHub, and Visual Studio Code.
+This project serves as an introduction to Infrastructure as Code (IaC) using Terraform. The goal is to deploy a website on AWS and configure various AWS resources using code. This project helped me learn about configuring and managing AWS resources with Terraform and introduced me to DevOps tools like Git, GitHub, and Visual Studio Code.
 
 ## Table of Contents
 
