@@ -121,7 +121,8 @@ This project serves as an introduction to Infrastructure as Code (IaC) using Ter
 
 2. Enter your access key, secret access key, and default region.
 
-### Create S3 Bucket
+### Create S3 Bucket For Terraform State File
+State file is terraforms memory. It keeps track of what infrastructure has been created and what resources exist.
 
 1. In the AWS Console, create an S3 bucket to store the Terraform state file.
 2. Enable versioning on the bucket.
